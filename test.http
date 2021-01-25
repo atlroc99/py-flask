@@ -1,0 +1,51 @@
+# GET http://localhost:5000/test-client
+
+
+# GET http://localhost:5000/query-example?language=java&framework=springboot&website=spritzer.io
+
+
+POST http://localhost:5000/json-example
+Content-Type: application/json
+
+{
+    "language" : "Python",
+    "framework" : "Flask",
+    "website" : "Scotch",
+    "version_info" : {
+        "python" : 3.4,
+        "flask" : 0.12
+    },
+    "examples" : ["query", "form", "json"],
+    "boolean_test" : true
+}
+
+# POST http://localhost:5000/json-boolean-example HTTP/1.1
+# Content-type: application/json
+
+# {
+#     "language" : "Python",
+#     "framework" : "Flask",
+#     "website" : "Scotch",
+#     "version_info" : {
+#         "python" : 3.4,
+#         "flask" : 0.12
+#     },
+#     "examples" : ["query", "form", "json"],
+#     "boolean_test" : true
+# }
+
+
+# POST http://localhost:5000/json-list-test HTTP/1.1
+# Content-type: application/json 
+
+# {
+#     "language" : "Python",
+#     "framework" : "Flask",
+#     "website" : "Scotch",
+#     "version_info" : {
+#         "python" : 3.4,
+#         "flask" : 0.12
+#     },
+#     "examples" : ["query", "form", "json"],
+#     "boolean_test" : true
+# }
